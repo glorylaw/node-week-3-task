@@ -14,7 +14,7 @@ async function analysis() {
           const allDrivers = {}
           const driversInfo = new Map()
           await Promise.allSettled(allDriversId.map((id) =>getDriver(id).then((res) => (allDrivers[id] = res))))
-//console.log(allDriversId)
+
 
           const output ={
             noOfCashTrips: 0,
